@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+div {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  text-transform: uppercase;
+}
+
+
+div input,
+div button {
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+div input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+}
+
+div input[type="date"] {
+  width: 100%;
+  max-width: 200px;
+}
+
+div button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+div button:hover {
+  background-color: #45a049;
+}
+
+/* Task list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+button {
+  background-color: #FF6F61;
+  color: white;
+  font-size: 14px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #e65a4f;
+}
+
+
+@media (max-width: 768px) {
+
+  div input[type="text"],
+  div input[type="date"],
+  div button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  li {
+    padding: 15px;
+  }
+}
